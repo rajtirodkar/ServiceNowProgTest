@@ -2,32 +2,31 @@
 <html>
    <head>
       <title>ServiceNow</title>
-      <script type="text/javascript" src="js/date.js"></script>
-      <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-      <script type="text/javascript" src="js/jquery.e-calendar.js"></script>
-      <script type="text/javascript" src="js/mainjavascript.js"></script>
+      <script src="js/date.js"></script>
+      <script src="js/jquery-1.11.0.min.js"></script>
+      <script src="js/jquery.e-calendar.js"></script>
+      <script src="js/mainjavascript.js"></script>
       <link rel="stylesheet" href="css/jquery.e-calendar.css" />
       <link rel="stylesheet" href="css/style.css" />
    </head>
    <body onload="populateUsers()">
-   <h1>Select User</h1>
+      <h1>Select User</h1>
       <div id="user_name" class="notHidden"></div>
       <div id="calendar"></div>
-      
       <div id="user_schedule" class="notHidden"></div>
       <br />
       <section class="button-group hidden" id="button-section">
-	      <button class="button-btn" type="button" onclick="show('label1');">Task 1</button>
-	      <button class="button-btn" type="button" onclick="show('label2');">Task 2</button>
-	      <button class="button-btn" type="button" onclick="show('label3');">Task 3</button>
-	      <button class="button-btn" type="button" onclick="show('label4');">Task 4</button>
-	      <button class="button-btn" type="button" onclick="show('label5');">Task 5</button>
+         <button class="button-btn" type="button" onclick="show('task1');">Task 1</button>
+         <button class="button-btn" type="button" onclick="show('task2');">Task 2</button>
+         <button class="button-btn" type="button" onclick="show('task3');">Task 3</button>
+         <button class="button-btn" type="button" onclick="show('task4');">Task 4</button>
+         <button class="button-btn" type="button" onclick="show('task5');">Task 5</button>
       </section>
       <br />
-      <div id="label1" class="hidden"></div>
-      <div id="label2" class="hidden"></div>
-      <div id="label3" class="hidden"></div>
-      <div id="label4" class="hidden"></div>
-      <div id="label5" class="hidden"></div>
+      <div id="task1" class="hidden"></div>
+      <div id="task2" class="hidden"></div>
+      <div id="task3" class="hidden"></div>
+      <div id="task4" class="hidden"></div>
+      <div id="task5" class="hidden"></div>
    </body>
 </html>
