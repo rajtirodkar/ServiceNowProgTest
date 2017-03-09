@@ -1,0 +1,32 @@
+.hidden {
+    display: none;
+}
+.notHidden {
+	display: block;
+}
+.button-btn,
+table,
+table tr,
+table td{
+	border: 1px solid black;
+	border-radius: 4px;
+}
+h1, 
+form,
+section,
+table,
+#label2 {
+	text-align: center;
+}
+form{
+	margin-bottom: 10px;
+}
+body{
+	background-color: #f0f0f0;
+}
+
+table{
+	background-color: #FFFFF9;
+	width: 70%;
+	height: 70%;
+}

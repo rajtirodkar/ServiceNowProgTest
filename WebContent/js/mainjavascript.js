@@ -57,6 +57,8 @@
 	function userSelect() {
 		// alert("In User Select" + globalUsers);
 		// alert(globalUsers);
+		document.getElementById("button-section").className = "notHidden";
+		
 		var selectBox = document.getElementById("user_select");
 		var userIndex = selectBox.options[selectBox.selectedIndex].value;
 		// alert(selectBox.options[selectBox.selectedIndex].innerHTML+"userIndex");
@@ -143,8 +145,8 @@
 			return y.busy - x.busy;
 		});
 		// alert("alert(JSON.stringify(sample2));"+JSON.stringify(sample2));
-		var output2 = "<table><tr><td>Name</td><td>Total Busy Hours</td><td>Total Free Hours</td></tr>";
-		var output = "<table><tr><td>Name</td><td>" + type + "</td></tr>";
+		var output2 = "<table  align='center'><tr><td>Name</td><td>Total Busy Hours</td><td>Total Free Hours</td></tr>";
+		var output = "<table align='center'><tr><td>Name</td><td>" + type + "</td></tr>";
 		for (var loop = 0; loop < sample.length; loop++) {
 			output += "<tr><td>" + sample[loop].uname + "</td><td>"
 					+ sample[loop].busy + "</td></tr>";
@@ -216,8 +218,8 @@
 				$('#calendar').eCalendar({
 					events : obj
 				});
-				output = "The Busiest User/Users : ";
-				var output1 = "The Least Busy User/Users : ";
+				output = "<b>The Busiest User/Users : </b>";
+				var output1 = "<b>The Least Busy User/Users : </b>";
 				// alert("alert(JSON.stringify(sample2));"+JSON.stringify(sample2)+
 				// " "+sample2.length+" "+sample2[0].busy);
 				var tempo = sample2.length - 1;
@@ -251,12 +253,12 @@
 	
 				}
 				// alert(output);
-				output += " & " + output1;
+				output += " <br> " +  output1 ;
 				document.getElementById("label2").innerHTML = output;
 				// document.getElementById("label3").innerHTML = output1;
 				var days = [ 'Sunday', 'Monday', 'Tuesday', 'Wednesday',
 						'Thursday', 'Friday', 'Saturday' ];
-				var output3 = "<table><tr><td><h3>Name</h3></td><td><h3>Monday</h3></td><td><h3>Tuesday</h3><td><h3>Wednesday</h3></td><td><h3>Thursday</h3></td><td><h3>Friday</h3></td></tr>";
+				var output3 = "<table align='center'><tr><td><h3>Name</h3></td><td><h3>Monday</h3></td><td><h3>Tuesday</h3><td><h3>Wednesday</h3></td><td><h3>Thursday</h3></td><td><h3>Friday</h3></td></tr>";
 				for (var loop = 0; loop < daywiseFree.length; loop++) {
 					// alert(globalUsers[loop].name);
 					output3 += "<tr><td>" + globalUsers[loop].name + "</td>";

@@ -7,19 +7,22 @@
       <script type="text/javascript" src="js/jquery.e-calendar.js"></script>
       <script type="text/javascript" src="js/mainjavascript.js"></script>
       <link rel="stylesheet" href="css/jquery.e-calendar.css" />
-      <link rel="stylesheet" href="css/hide.css" />
+      <link rel="stylesheet" href="css/style.css" />
    </head>
    <body onload="populateUsers()">
-      <div id="calendar"></div>
-      <h1>Select User</h1>
+   <h1>Select User</h1>
       <div id="user_name" class="notHidden"></div>
+      <div id="calendar"></div>
+      
       <div id="user_schedule" class="notHidden"></div>
       <br />
-      <button type="button" onclick="show('label1');">Task 1</button>
-      <button type="button" onclick="show('label2');">Task 2</button>
-      <button type="button" onclick="show('label3');">Task 3</button>
-      <button type="button" onclick="show('label4');">Task 4</button>
-      <button type="button" onclick="show('label5');">Task 5</button>
+      <section class="button-group hidden" id="button-section">
+	      <button class="button-btn" type="button" onclick="show('label1');">Task 1</button>
+	      <button class="button-btn" type="button" onclick="show('label2');">Task 2</button>
+	      <button class="button-btn" type="button" onclick="show('label3');">Task 3</button>
+	      <button class="button-btn" type="button" onclick="show('label4');">Task 4</button>
+	      <button class="button-btn" type="button" onclick="show('label5');">Task 5</button>
+      </section>
       <br />
       <div id="label1" class="hidden"></div>
       <div id="label2" class="hidden"></div>
